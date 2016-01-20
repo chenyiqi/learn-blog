@@ -1,0 +1,22 @@
+{
+  "name": "blog",
+  "description": "",
+  "main": "app.js",
+  "license": "ISC",
+  "keywords": [
+    "blog"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
