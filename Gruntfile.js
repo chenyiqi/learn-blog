@@ -4,8 +4,8 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             less: {
-                files: ['static/style/*'],
-                tasks: ['less']
+                files: ['static/style/*.less'],
+                tasks: ['less:development']
             }
         },
         less: {
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
                     ignore: ['node_modules/**'],
                     ext: 'js',
                     watch: ['.'],
-                    delay: 1,
+                    delay: 1000,
                     legacyWatch: true
                 }
             }
