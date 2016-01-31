@@ -148,12 +148,11 @@ body {
   background: #444;
 }
 .nav .nav-inner {
-  width: 1400px;
   height: 50px;
-  margin: 0 auto;
+  margin: 0 120px;
 }
 .nav .nav-list {
-  height: 50px;
+  height: 51px;
   line-height: 50px;
 }
 .nav .nav-list li {
@@ -168,7 +167,7 @@ body {
   color: #fff;
 }
 .container {
-  width: 1400px;
+  margin: 0 120px;
   padding: 0;
 }
 .login-form {

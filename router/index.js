@@ -1,21 +1,26 @@
 var router = require('express').Router();
-var username;
+
 router.get('/', function(req, res) {
-    console.log(req.body);
+    console.log(req);
     res.render('blog/index', {
-        title: '首页index信息',
-        username: username
+        title: '首页index信息'
+    });
+});
+
+router.get('/register', function(req, res) {
+    res.render('blog/register', {
+        username: ''
     });
 });
 
 router.get('/login', function(req, res) {
     res.render('blog/index', {
-        username: username
+        username: ''
     });
 });
 
 router.post('/login', function(req, res) {
-    username = req.body.username;
+    //username = req.body.username;
     res.redirect('/');
 });
 

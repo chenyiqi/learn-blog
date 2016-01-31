@@ -4,7 +4,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             less: {
-                files: ['static/style/*'],
+                files: ['static/style/*.less'],
                 tasks: ['less']
             }
         },
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
             development: {
                 script: 'app.js',
                 options: {
-                    args: [],
+                    args: ['dev'],
                     nodeArgs: ['--debug'],
                     callback: function (nodemon) {
                         nodemon.on('log', function (event) {
@@ -32,9 +32,8 @@ module.exports = function(grunt) {
                     cwd: __dirname,
                     ignore: ['node_modules/**'],
                     ext: 'js',
-                    watch: ['.'],
-                    delay: 1,
-                    legacyWatch: true
+                    watch: ['./'],
+                    delay: 2000
                 }
             }
         },

@@ -12,11 +12,12 @@
     "dependencies": {
         "express": "^4.13.3",
         "ejs": "^2.3.4",
-        "body-parser": "^1.14.2"
+        "body-parser": "^1.14.2",
+        "mongoose": "4.3.6"
     },
     "devDependencies": {
         "grunt": "^0.4.5",
-        "grunt-nodemon": "^0.3.0",
+        "grunt-nodemon": "*",
         "grunt-concurrent": "^1.0.0",
         "grunt-contrib-watch": "^0.6.1",
         "grunt-contrib-less": "~1.0.0"
