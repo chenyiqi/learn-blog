@@ -1,7 +1,6 @@
 var router = require('express').Router();
 
 router.get('/', function(req, res) {
-    console.log(req);
     res.render('blog/index', {
         title: '首页index信息'
     });

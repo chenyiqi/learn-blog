@@ -17,6 +17,6 @@ app.use(function(req, res, next) {
     res.locals.siteUrl = 'http://' + req.hostname + ':' + port;
     next();
 });
-app.use('/', router);
+app.use(router);
 
 module.exports = app;

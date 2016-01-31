@@ -20,7 +20,6 @@ module.exports = function(grunt) {
                 script: 'app.js',
                 options: {
                     args: ['dev'],
-                    nodeArgs: ['--debug'],
                     callback: function (nodemon) {
                         nodemon.on('log', function (event) {
                           console.log(event.colour);
@@ -33,7 +32,7 @@ module.exports = function(grunt) {
                     ignore: ['node_modules/**'],
                     ext: 'js',
                     watch: ['./'],
-                    delay: 2000
+                    delay: 1000
                 }
             }
         },

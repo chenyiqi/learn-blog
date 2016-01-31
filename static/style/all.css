@@ -140,9 +140,6 @@ html {
   height: 0;
   clear: both;
 }
-body {
-  background: #e1e1e1;
-}
 .nav {
   height: 50px;
   background: #444;
@@ -167,8 +164,16 @@ body {
   color: #fff;
 }
 .container {
-  margin: 0 120px;
   padding: 0;
+}
+.container .content {
+  margin-top: 20px;
+  padding: 60px 50px;
+  border-radius: 6px;
+  background: #eee;
+}
+.container .content .title {
+  font-size: 60px;
 }
 .login-form {
   margin-top: 30px;
