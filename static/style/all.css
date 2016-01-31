@@ -149,7 +149,12 @@ html {
   margin: 0 120px;
 }
 .nav .nav-list {
+<<<<<<< HEAD
   height: 51px;
+=======
+  font-size: 13px;
+  height: 50px;
+>>>>>>> cfef62887dfc219688c847d8e79fea86d09e54c8
   line-height: 50px;
 }
 .nav .nav-list li {
